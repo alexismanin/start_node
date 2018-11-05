@@ -10,7 +10,7 @@ app.get('/toto', function (req, res) {
   res.send('Hello Toto!')
 } )
 
-port = 8089
+port = process.env.PORT || 8080
 
 app.listen(port, function () {
   console.log('Example app listening on port '+port)
